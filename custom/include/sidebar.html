@@ -1,0 +1,16 @@
+<div class="text-center Menu"  ng-controller="publicSidebarCtrl">
+	<ul class="mainMenu" id="tab_list">
+		<li ng-repeat="item in showList track by $index">
+			<div class="titleMenu clearfix">
+				<img ng-src="img/{{item.imgUrl}}" class="pull-left" alt="">
+				<span class="pull-left">{{item.text}}</span>
+				<img ng-src="img/down.png" class="pull-right" alt="">
+			</div>
+			<ul class="subMenu">
+				<li ng-repeat="list in item.content track by $index"  ng-click="jump(list.jumpTip)">
+					{{list.text}}
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>

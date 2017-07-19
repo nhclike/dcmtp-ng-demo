@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/court_attend.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/case" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/committee/list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/committee/meeting.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/court/list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/court/meeting.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/court_attend.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/custom/include/header.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/custom/include/sidebar.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/commit.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/court.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/exit.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/login_bg.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/angular-animate.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/angular.min.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/dmctp.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/js/ui-bootstrap-tpls.min.js" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,98 @@
+.model_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url("../img/login_bg.jpg") no-repeat;
+}
+#section #login_content {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 1000px;
+}
+#section #login_content h1 {
+  width: 100%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  color: #fff;
+}
+#section #login_content form.form-horizontal {
+  width: 80%;
+}
+#section #login_content form.form-horizontal .form-group {
+  width: 100%;
+  margin: 0;
+}
+#section #login_content form.form-horizontal .form-group #courtCode {
+  height: 55px;
+  line-height: 33px;
+  font-size: 20px;
+  color: #acacac;
+  border: solid 1px #fff;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: #fff url("../img/down.png") no-repeat scroll right center;
+  padding-right: 14px;
+}
+#section #login_content form.form-horizontal .form-group select::-ms-expand {
+  display: none;
+}
+#section #login_content form.form-horizontal .form-group #loginName {
+  background: #fff url(../img/user.png ) no-repeat 7px 10px;
+  padding-left: 5rem;
+  height: 55px;
+  border-radius: 0;
+}
+#section #login_content form.form-horizontal .form-group #password {
+  background: #fff url(../img/pwd.png ) no-repeat 7px 10px;
+  padding-left: 5rem;
+  height: 55px;
+  border-radius: 0;
+  margin-bottom: 10px;
+}
+#section #login_content form.form-horizontal .form-group button {
+  margin-top: 50px;
+  color: #fff;
+  background-color: #4791FF;
+  height: 55px;
+  font-size: 2rem;
+}
+#section #login_content form.form-horizontal .form-group input[type='checkbox'] {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  background: url(../img/unchoose.png) no-repeat -1px -1px;
+  outline: none;
+  border-radius: 5px;
+}
+#section #login_content form.form-horizontal .form-group input[type='checkbox']:checked {
+  background: #fff url(../img/choose.png) no-repeat 0 0;
+}

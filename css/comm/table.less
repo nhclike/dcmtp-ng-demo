@@ -1,0 +1,86 @@
+@theme_color:#0093f9;
+#childContent{
+	padding: 30px 50px;
+	h2{
+		margin:0;
+	}
+	form{
+		margin-top:20px;
+		.form-group{
+			label{
+				color:#596e81;
+				font-size:24px;
+				line-height: 24px;
+				font-weight: normal;
+				margin: 0 10px 0 30px ;
+			}
+			select{
+				width: 180px;
+				height: 40px;
+				font-size: 20px;
+				color:#acacac;
+				border: solid 1px #ddd;
+				appearance:none;
+				-moz-appearance:none;
+				-webkit-appearance:none;
+				background: url("../img/down.png") no-repeat scroll 155px center transparent;
+				padding-right: 14px;
+			}
+			select::-ms-expand { display: none; }
+			input{
+				width: 180px;
+				height: 40px;
+			}
+			button{
+				width: 120px;
+				height: 40px;
+				background: @theme_color;
+				border-radius:3px;
+				font-size:20px;
+				box-shadow: 0 4px -10px outer;
+				margin: 0 10px;
+				padding: 2px 12px;
+				outline: none;
+			}
+		}
+	}
+	#table_content{
+		margin: 20px auto;
+		height: 500px;
+		border: 1px solid #ddd;
+		table{
+			thead{
+				background-color: @theme_color*.9;
+				color: #fff;
+				tr{
+					th{
+						height: 50px;
+						vertical-align: middle;
+						font-size: 18px;
+						font-weight: normal;
+					}
+				}
+			}
+			tbody{
+				background-color: #fff;
+				border: 1px solid #ddd;
+				tr{
+					td{
+						vertical-align: middle;
+						height: 50px;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
+	#page_list{
+		margin: 0;
+	}
+	div.pull-left{
+		span{
+			display: block;
+			margin: 6px;
+		}
+	}
+}

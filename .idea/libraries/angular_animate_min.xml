@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="angular-animate.min" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/js/jquery-1.11.3.js" />
+        <item url="file://$PROJECT_DIR$/js/court_attend.js" />
+        <item url="file://$PROJECT_DIR$/js/bootlint.js" />
+        <item url="file://$PROJECT_DIR$/js/dmctp.js" />
+        <item url="file://$PROJECT_DIR$/js/index_view.js" />
+        <item url="file://$PROJECT_DIR$/js/json2.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/js/angular-animate.min.js" />
+      <root url="file://$PROJECT_DIR$/js/angular.min.js" />
+      <root url="file://$PROJECT_DIR$/js/html5shiv.min.js" />
+      <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
+      <root url="file://$PROJECT_DIR$/js/angular-ui-router.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery-1.11.3.js" />
+      <root url="file://$PROJECT_DIR$/js/court_attend.js" />
+      <root url="file://$PROJECT_DIR$/js/bootlint.js" />
+      <root url="file://$PROJECT_DIR$/js/dmctp.js" />
+      <root url="file://$PROJECT_DIR$/js/respond.min.js" />
+      <root url="file://$PROJECT_DIR$/js/index_view.js" />
+      <root url="file://$PROJECT_DIR$/js/json2.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/js/public_index_date.js" />
+    </SOURCES>
+  </library>
+</component>

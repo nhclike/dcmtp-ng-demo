@@ -1,0 +1,110 @@
+
+<link rel="stylesheet" href="css/comm/table.css">
+<div id="childContent"  ng-controller="caseDateCtrl">
+  <div class="container-fluid" >
+    <!--查询表格-->
+    <div class="row">
+      <h2>法院列表</h2>
+      <!--表格-->
+      <form id="formSearch" class="form-inline">
+        <div class="form-group col-xs-3">
+          <label for="txt_search_name">法院名称</label>
+          <input type="text" name="name" id="txt_search_name" onchange="fnSearch();" class="form-control">
+        </div>
+        <div class="form-group  col-xs-3">
+          <label class="control-label" for="txt_search_parentId">上级法院</label>
+          <select name="parentId" id="txt_search_parentId" class="form-control">
+            <option value="">----全部----</option>
+            <c:forEach items="${courtList}" var="court" varStatus="status">
+              <option value="${court.id}">${court.name}</option>
+            </c:forEach>
+          </select>
+        </div>
+        <div class="form-group col-xs-4">
+          <button type="button"  id="btn_query"
+                  class="btn btn-primary" onclick="fnSearch();">查询</button>
+        </div>
+        <div class="form-group  col-xs-2">
+
+          <button type="button"  id="btn_add"
+                  class="btn btn-info" onclick="fnAdd();">添加</button>
+        </div>
+      </form>
+    </div>
+
+    <!--表格-->
+    <div class="row">
+      <div class="col-xs-12">
+        <!--table-->
+        <div id="table_content">
+          <div  style="display:block; max-height:500px;width:100%;overflow:auto;overflow-x:hidden" >
+            <table class="table text-center table-hover" cellpadding="2rem" style="margin: 0" >
+              <thead>
+              <tr>
+                <th class="text-center">案号</th>
+                <th class="text-center">审讯地点</th>
+                <th class="text-center">开始时间</th>
+                <th class="text-center">审讯次数</th>
+                <th class="text-center">讯问类型</th>
+                <th class="text-center">被讯问人</th>
+                <th class="text-center">讯问人</th>
+                <th class="text-center">操作</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr ng-repeat="item in caseDataDateList track by $index">
+                <td>{{item.caseNumber}}</td>
+                <td>{{item.caseAddress}}</td>
+                <td>{{item.caseStartTime}}</td>
+                <td>{{item.caseStatue}}</td>
+                <td>{{caseStatueN}}</td>
+                <td>{{item.casePersonal}}</td>
+                <td>{{item.caseAnswer}}</td>
+                <td>
+                  <a href="">编辑</a>
+                  <a href="">删除</a>
+                  <a href="">查看</a>
+                  <a href="">进入审讯</a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--底部页签-->
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-8 col-md-3 col-md-offset-9 col-lg-3 col-md-offset-9">
+
+        <ul class="pagination pull-left" id="page_list">
+          <li>
+            <a type="button" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+        <div class="pull-left">
+                          <span>共
+                          <a href="#">5</a>
+                          页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

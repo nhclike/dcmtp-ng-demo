@@ -1,0 +1,77 @@
+#childContent {
+  padding: 30px 50px;
+}
+#childContent h2 {
+  margin: 0;
+}
+#childContent form {
+  margin-top: 20px;
+}
+#childContent form .form-group label {
+  color: #596e81;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 0 10px 0 30px ;
+}
+#childContent form .form-group select {
+  width: 180px;
+  height: 40px;
+  font-size: 20px;
+  color: #acacac;
+  border: solid 1px #ddd;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("../img/down.png") no-repeat scroll 155px center transparent;
+  padding-right: 14px;
+}
+#childContent form .form-group select::-ms-expand {
+  display: none;
+}
+#childContent form .form-group input {
+  width: 180px;
+  height: 40px;
+}
+#childContent form .form-group button {
+  width: 120px;
+  height: 40px;
+  background: #0093f9;
+  border-radius: 3px;
+  font-size: 20px;
+  box-shadow: 0 4px -10px outer;
+  margin: 0 10px;
+  padding: 2px 12px;
+  outline: none;
+}
+#childContent #table_content {
+  margin: 20px auto;
+  height: 500px;
+  border: 1px solid #ddd;
+}
+#childContent #table_content table thead {
+  background-color: #0084e0;
+  color: #fff;
+}
+#childContent #table_content table thead tr th {
+  height: 50px;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: normal;
+}
+#childContent #table_content table tbody {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+#childContent #table_content table tbody tr td {
+  vertical-align: middle;
+  height: 50px;
+  font-size: 18px;
+}
+#childContent #page_list {
+  margin: 0;
+}
+#childContent div.pull-left span {
+  display: block;
+  margin: 6px;
+}

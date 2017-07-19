@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="css/index.css"/>
+<!--引入头部-->
+<div ng-include="'custom/include/header.html'"></div>
+<!--中间主体内容-->
+<section id="section">
+	<div class="container">
+		<div class="row">
+			<!--左边菜单栏-->
+			<div ng-include="'custom/include/sidebar.html'"></div>
+			<!--右边切换内容-->
+			<div id="context_show">
+				<!--ng控制的中间切换主内容-->
+				<div ui-view>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+

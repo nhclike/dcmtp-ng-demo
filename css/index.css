@@ -1,0 +1,82 @@
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+#section {
+  padding-top: 90px;
+}
+#section .container {
+  width: 100%;
+}
+#section .container .row .Menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: 999;
+  width: 280px;
+  padding: 0;
+  background: #EEF5FF;
+}
+#section .container .row .Menu ul.mainMenu {
+  text-align: center;
+  margin-top: 20px;
+  height: 100%;
+}
+#section .container .row .Menu ul.mainMenu li {
+  overflow: hidden;
+}
+#section .container .row .Menu ul.mainMenu li div.titleMenu {
+  padding: 15px 15px 15px 45px;
+  width: 100%;
+  background: #D4E6FF;
+  color: #0093F9;
+  cursor: pointer;
+  height: 66px;
+  font-size: 28px;
+}
+#section .container .row .Menu ul.mainMenu li div.titleMenu img.pull-left {
+  margin-top: 5px;
+  margin-right: 20px;
+}
+#section .container .row .Menu ul.mainMenu li div.titleMenu img.pull-right {
+  margin-top: 13px;
+}
+#section .container .row .Menu ul.mainMenu li ul.subMenu li {
+  padding: 15px;
+  cursor: pointer;
+  height: 66px;
+  font-size: 24px;
+  color: #596181;
+}
+#section .container .row .Menu ul.mainMenu li ul.subMenu li.chosen {
+  background: #fff;
+  color: #0093F9;
+}
+#section .container .row #context_show {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  padding-left: 280px;
+  width: 100%;
+  background-color: #fff ;
+}
