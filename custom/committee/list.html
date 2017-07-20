@@ -1,124 +1,10 @@
 
 <link rel="stylesheet" href="css/comm/table.css">
-<div id="childContent"  ng-controller="caseDateCtrl">
-  <!--排期列表模态框-->
-  <div class="modal fade" id="commit_add" data-backdrop="static" ng-controller="modalCtrl">
-    <div class="model_center">
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close" data-dismiss="modal">&times;</span>
-          <h3>模态框</h3>
-        </div>
-        <div class="modal-body">
-          <form id="form1" class="form-horizontal" style="width:100%;height:100%">
-            <input type="hidden" name="operator" id="operator" value="${sessionScope.currentUser.name}"/>
-            <div class="form-group">
-              <label for="name" class="control-label col-sm-2 col-md-2 col-lg-1">审委会名称:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="name" id="name">
-                  </div>
-                </div>
-              </div>
-              <label for="courtName" class="control-label col-sm-2 col-md-2  col-lg-1">所属法院:</label>
-              <div class="col-sm-4 col-md-4">
-                <select class="form-control" name="courtCode" id="court">
-                  <c:forEach items="${courtList}" var="court">
-                    <option value="${court.courtCode}">${court.name}</option>
-                  </c:forEach>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="account" class="control-label col-sm-2 col-md-2  col-lg-1">审委会账号:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="account" id="account">
-                  </div>
-                </div>
-              </div>
-              <label for="url" class="control-label col-sm-2 col-md-2 col-lg-1">审委会URL:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="url" id="url">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="description" class="control-label col-sm-2 col-md-2  col-lg-1">审委会描述:</label>
-              <div class="col-sm-10 col-md-10">
-                <textarea  class="form-control" rows=2 name="description" id="description"></textarea>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="password" class="control-label col-sm-2 col-md-2  col-lg-1">审委会密码:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="password" class="form-control" name="password" id="password">
-                  </div>
-                </div>
-              </div>
-              <label for="pwdConfirm" class="control-label col-sm-2 col-md-2  col-lg-1">密码确认:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="password" class="form-control" name="pwdConfirm" id="pwdConfirm">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="databaseServer" class="control-label col-sm-2 col-md-2  col-lg-1">服务器:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="databaseServer" id="databaseServer">
-                  </div>
-                </div>
-              </div>
-              <label for="databaseName" class="control-label col-sm-2 col-md-2  col-lg-1">数据库:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="databaseName" id="databaseName">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="databaseAccount" class="control-label col-sm-2 col-md-2  col-lg-1">用户名:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="text" class="form-control" name="databaseAccount" id="databaseAccount">
-                  </div>
-                </div>
-              </div>
-              <label for="databasePassword" class="control-label col-sm-2 col-md-2  col-lg-1">密码:</label>
-              <div class="col-sm-4 col-md-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <input type="password" class="form-control" name="databasePassword" id="databasePassword">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-md-8 col-md-offset-2 col-xs-6 col-xs-offset-3 text-center">
-                <button id="btn_add" type="submit" class="btn btn-primary" >添加</button>
-                <button class="btn btn-default" onclick="fnCancel();">取消</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="childContent"  ng-controller="commitListCtrl">
+  <!--添加审委会模态框-->
+  <script type="text/ng-template" id="myModalAdd.html">
+    <div ng-include="'custom/committee/add_modal.html'"></div>
+  </script>
 
   <div class="container-fluid" >
     <!--查询表格-->
@@ -127,8 +13,8 @@
       <!--表格-->
       <form id="formSearch" class="form-inline">
         <div class="form-group col-xs-3">
-          <label for="txt_search_departmentname">法院名称</label>
-          <input type="text" name="name" id="txt_search_name" onchange="fnSearch();" class="form-control">
+          <label for="txt_search_name">法院名称</label>
+          <input type="text" name="name" id="txt_search_name" class="form-control" ng-model="checkoutList.courtName">
         </div>
 
         <div class="form-group  col-xs-7">
@@ -136,7 +22,7 @@
 
         </div>
         <div class="form-group col-xs-2">
-          <button type="button" id="btn_add" class="btn btn-info" data-toggle="modal" data-target="#commit_add">添加</button>
+          <button type="button" id="btn_add" class="btn btn-info" ng-click="open('md')">添加</button>
         </div>
       </form>
     </div>
@@ -161,7 +47,7 @@
               </tr>
               </thead>
               <tbody>
-              <tr ng-repeat="item in caseDataDateList track by $index">
+              <tr ng-repeat="item in commitList track by $index">
                 <td>{{item.caseNumber}}</td>
                 <td>{{item.caseAddress}}</td>
                 <td>{{item.caseStartTime}}</td>
@@ -170,10 +56,8 @@
                 <td>{{item.casePersonal}}</td>
                 <td>{{item.caseAnswer}}</td>
                 <td>
-                  <a href="">编辑</a>
-                  <a href="">删除</a>
-                  <a href="">查看</a>
-                  <a href="">进入审讯</a>
+                  <button class="btn" data-toggle="modal" data-target="#commit_add">修改</button>
+                  <button class="btn">查询</button>
                 </td>
               </tr>
               </tbody>
@@ -186,7 +70,7 @@
     <div class="row">
       <div class="col-xs-4 col-xs-offset-8 col-md-3 col-md-offset-9 col-lg-3 col-md-offset-9">
 
-        <ul class="pagination pull-left" id="page_list">
+        <ul class="pagination pull-left" id="page_list" >
           <li>
             <a type="button" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>

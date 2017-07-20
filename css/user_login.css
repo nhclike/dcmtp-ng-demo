@@ -28,11 +28,11 @@ form {
   padding: 0;
 }
 body {
-  background: url("../img/login_bg.jpg") no-repeat;
+  background: url("../img/comm/login_bg.jpg") no-repeat;
+  background-size: 100% 100%;
 }
 #section #login_content {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 1000px;
 }
 #section #login_content h1 {
   width: 100%;
@@ -59,20 +59,20 @@ body {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: #fff url("../img/down.png") no-repeat scroll right center;
+  background: #fff url("../img/comm/down.png") no-repeat scroll right center;
   padding-right: 14px;
 }
 #section #login_content form.form-horizontal .form-group select::-ms-expand {
   display: none;
 }
 #section #login_content form.form-horizontal .form-group #loginName {
-  background: #fff url(../img/user.png ) no-repeat 7px 10px;
+  background: #fff url(../img/comm/user.png ) no-repeat 7px 10px;
   padding-left: 5rem;
   height: 55px;
   border-radius: 0;
 }
 #section #login_content form.form-horizontal .form-group #password {
-  background: #fff url(../img/pwd.png ) no-repeat 7px 10px;
+  background: #fff url(../img/comm/pwd.png ) no-repeat 7px 10px;
   padding-left: 5rem;
   height: 55px;
   border-radius: 0;
@@ -89,10 +89,10 @@ body {
   -webkit-appearance: none;
   width: 22px;
   height: 22px;
-  background: url(../img/unchoose.png) no-repeat -1px -1px;
+  background: url(../img/comm/unchoose.png) no-repeat -1px -1px;
   outline: none;
   border-radius: 5px;
 }
 #section #login_content form.form-horizontal .form-group input[type='checkbox']:checked {
-  background: #fff url(../img/choose.png) no-repeat 0 0;
+  background: #fff url(../img/comm/choose.png) no-repeat 0 0;
 }

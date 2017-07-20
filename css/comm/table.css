@@ -68,6 +68,18 @@
   height: 50px;
   font-size: 18px;
 }
+#childContent #table_content table tbody tr td button {
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  background: #0093f9;
+  border-radius: 3px;
+  font-size: 18px;
+  box-shadow: 0 4px -10px outer;
+  margin: 0 10px;
+  padding: 2px 12px;
+  outline: none;
+}
 #childContent #page_list {
   margin: 0;
 }

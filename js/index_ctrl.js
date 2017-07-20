@@ -1,6 +1,24 @@
 
-//创建caseHeader控制器
-app.controller('caseHeaderCtrl',['$scope',function($scope){
+
+
+app.service('$Sidebar',function ($AutoHeight) {
+    this.active=function () {
+        $('.subMenu').on('click', 'li', function () {
+         $('.mainMenu').find('li').removeClass('chosen');
+         $(this).addClass('chosen');
+        });
+    };
+    this.init=function () {
+        $AutoHeight.indexHeight();
+        $('.subMenu').find('li').first().addClass('chosen');
+        $('.mainMenu').on('click', '.titleMenu', function () {
+        $(this).next('.subMenu').slideToggle().parent().siblings('.subMenu').slideUp();
+        });
+    }
+
+});
+//创建Header控制器
+app.controller('HeaderCtrl',['$scope',function($scope){
   //定义header显示信息列表
   $scope.userList={time:'上午',userName:'developer',userImg:'developer.png'};
   //定义显示用户名还是退出
@@ -9,15 +27,23 @@ app.controller('caseHeaderCtrl',['$scope',function($scope){
     $scope.isshow=false;
   }
 }]);
-//创建public.sidebar控制器
-app.controller('publicSidebarCtrl',['$scope',function($scope){
+//创建admin.sidebar控制器
+app.controller('adminSidebarCtrl',['$scope','$Sidebar','$state',function($scope,$Sidebar,$state){
+    $Sidebar.init();
+    $scope.clickToggle=function (desState, params) {
+      console.log(' jump func is called ');
+      $state.go(desState, params);
+      $Sidebar.active();
+  };
+
   //定义左边栏显示内容数据
+
   $scope.showList = [
       {
           "imgUrl":"commit.png",
           "text":"审委会",
           "content":[
-              {"imgUrl":"index_2.png","text":"委员会管理","jumpTip":"admin.commitList"},
+              {"imgUrl":"index_2.png","text":"审委会管理","jumpTip":"admin.commitList"},
               {"imgUrl":"index_2.png","text":"会议列表","jumpTip":"admin.commitMeeting"},
               {"imgUrl":"index_2.png","text":"审委会统计","jumpTip":"admin.commitList"}
           ]
@@ -34,49 +60,67 @@ app.controller('publicSidebarCtrl',['$scope',function($scope){
   ];
 }]);
 
-//创建public.index控制器
-app.controller('publicIndexCtrl',['$scope','$http',function($scope,$http){
-  //定义index中显示内容的数据
-  $scope.caseIndexList=[];
-  //发起网络请求初始化一些数据
-    $http
-        .get('data/caseindex.json')
-        .success(function(data){
-           $scope.caseIndexList=data;
-        });
-  //点击庭审出席跳转到对应的法庭
-  $scope.enterCourt=function($index){
-    $scope.courtName=$scope.caseIndexList[$index].caseAddress;
-    sessionStorage['courtName']=$scope.courtName;
-    location.href='custom/court_attend.html';
-  };
+app.controller('commitAddModalCtrl',['$scope','$modalInstance','items',function ($scope,$modalInstance,items) {
+    $scope.items=items;
+    $scope.selected = {
+        item : $scope.items[0]
+    };
+    $scope.ok = function () {
+        $modalInstance.close($scope.selected.item);
+    };
+
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
 
 }]);
-//创建public.index中模态框控制器（单模态框处理）
-app.controller('modalCtrl',['$scope','$http',function ($scope,$http) {
-    //请求排期数据
-    $http
-        .get('data/casedata.json')
-        .success(function(data){
-            $scope.caseDataList=data;
+
+//创建审委会列表控制器
+app.controller('commitListCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike','$modal',function($scope,$http,$stateParams,$httpParamSerializerJQLike,$modal){
+    //向模态框传递值
+    $scope.items=[];
+    //模态框实例
+    $scope.open=function (size) {
+        var modalInstance = $modal.open({
+            templateUrl: 'myModalAdd.html',
+            controller: 'commitAddModalCtrl',
+            size: size,
+            resolve: {
+                items: function () {
+                    return $scope.items;
+                }
+            }
         });
-}]);
-//创建案件排期控制器
-app.controller('caseDateCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
+        //模态框调用之后
+        modalInstance.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+            alert('this is a test');
+            console.log(selectedItem);
+        });
+    };
+    $scope.commitList=[];
     //表格数据
     $http
         .get('data/casedatadate.json')
         .success(function(data){
-            $scope.caseDataDateList=data;
+            $scope.commitList=data;
         });
     //查询列表
     $scope.checkoutList={
-        caseNumber:'',
-        caseCause:'',
-        caseStartTime:'',
-        casePersonal:'',
-        caseAnswered:''
+        courtName:'',
     };
+    //监听用户输入
+    $scope.$watch('checkoutList.courtName', function () {
+        if ($scope.checkoutList.courtName.length > 0) {
+            console.log($scope.checkoutList.courtName);
+            // $http.get('data/？' + $scope.$scope.checkoutList.courtName)
+            //     .success(function (data) {
+            //         if (data.length > 0) {
+            //             $scope.commitList=data;
+            //         }
+            //     })
+        }
+    });
     //点击查询时，拿到用户的输入
     $scope.submitCheckout=function () {
         //将用户查询输入序列化发送给后台
@@ -84,9 +128,6 @@ app.controller('caseDateCtrl',['$scope','$http','$stateParams','$httpParamSerial
         console.log(str);
         
     };
-    //新建案件，新建排期两个模态框的问题（多模态框处理）
-    $scope.newBuildCase=function () {
-        
-    }
+    //分页处理
 
 }]);

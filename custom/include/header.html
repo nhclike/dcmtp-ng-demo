@@ -24,22 +24,22 @@
 	</style>
 </header>
 <body>
-<div id="header" ng-controller="caseHeaderCtrl">
+<div id="header" ng-controller="HeaderCtrl">
 	<nav class="navbar navbar-default navbar-fixed-top navbar-style-custom" style="height: 90px;margin: 0">
 		<div class="container" style="width: 100%;height: 100%">
 			<!--logo显示区-->
 			<div class="navbar-left">
-				<img src="img/logo.png" alt="" style="width:45px;position: relative;top:12px;left: 30px">
+				<img src="img/comm/logo.png" alt="" style="width:45px;position: relative;top:12px;left: 30px">
 				<span style="color:#fff;font-size:38px;position: relative;top:22px;left: 40px">审委会管理平台</span>
 			</div>
 			<!--小屏幕下拉显示-->
 			<div class="navbar-right" id="nav_logo" style="position: relative;top: 18px;">
 				<a href="" style="font-size: 25px">
-					<img ng-src="img/{{userList.userImg}}" >
+					<img ng-src="img/comm/{{userList.userImg}}" >
 					<span id="select_role">{{userList.userName}}</span>
 				</a>
-				<a href="${ctx}/system/logout" style="font-size: 25px">
-					<img ng-src="img/exit.png" alt="">
+				<a href="" style="font-size: 25px">
+					<img ng-src="img/comm/exit.png" alt="">
 					<span>退出</span>
 				</a>
 			</div>

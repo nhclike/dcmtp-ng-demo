@@ -8,7 +8,11 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
 	padding: 0;
 	outline: none;
 }
-
+.clearfloat:after{  /*最简方式*/
+	content: '';
+	display: block;
+	clear: both;
+}
 #section{
 	padding-top:90px;
 	.container{

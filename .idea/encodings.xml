@@ -13,11 +13,11 @@
     <file url="file://$PROJECT_DIR$/custom/include/sidebar.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fonts" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/img" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/img/commit.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/img/court.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/img/down.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/img/exit.png" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/img/login_bg.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/comm/down.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/comm/exit.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/comm/login_bg.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/index/commit.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/img/index/court.png" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/angular-animate.js" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/js/angular.min.js" charset="UTF-8" />
