@@ -5,7 +5,9 @@
   <script type="text/ng-template" id="myModalAdd.html">
     <div ng-include="'custom/committee/add_modal.html'"></div>
   </script>
-
+  <script type="text/ng-template" id="myModalRevise.html">
+    <div ng-include="'custom/committee/revise_modal.html'"></div>
+  </script>
   <div class="container-fluid" >
     <!--查询表格-->
     <div class="row">
@@ -22,7 +24,7 @@
 
         </div>
         <div class="form-group col-xs-2">
-          <button type="button" id="btn_add" class="btn btn-info" ng-click="open('md')">添加</button>
+          <button type="button" id="btn_add" class="btn btn-info" ng-click="openAdd('md')" ng-controller="addModalCtrl">添加</button>
         </div>
       </form>
     </div>
@@ -56,8 +58,8 @@
                 <td>{{item.casePersonal}}</td>
                 <td>{{item.caseAnswer}}</td>
                 <td>
-                  <button class="btn" data-toggle="modal" data-target="#commit_add">修改</button>
-                  <button class="btn">查询</button>
+                  <button class="btn" ng-controller="reviseModalCtrl" ng-click="openRevise('md')">修改</button>
+                  <button class="btn">删除</button>
                 </td>
               </tr>
               </tbody>

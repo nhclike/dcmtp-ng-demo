@@ -59,8 +59,8 @@ app.controller('adminSidebarCtrl',['$scope','$Sidebar','$state',function($scope,
       }
   ];
 }]);
-
-app.controller('commitAddModalCtrl',['$scope','$modalInstance','items',function ($scope,$modalInstance,items) {
+//定义模态框实例
+app.controller('ModalInstanceCtrl',['$scope','$modalInstance','items',function ($scope,$modalInstance,items) {
     $scope.items=items;
     $scope.selected = {
         item : $scope.items[0]
@@ -68,22 +68,19 @@ app.controller('commitAddModalCtrl',['$scope','$modalInstance','items',function 
     $scope.ok = function () {
         $modalInstance.close($scope.selected.item);
     };
-
     $scope.cancel = function () {
         $modalInstance.dismiss('cancel');
     };
-
 }]);
-
-//创建审委会列表控制器
-app.controller('commitListCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike','$modal',function($scope,$http,$stateParams,$httpParamSerializerJQLike,$modal){
-    //向模态框传递值
-    $scope.items=[];
-    //模态框实例
-    $scope.open=function (size) {
+//定义修改模态框控制器
+app.controller('reviseModalCtrl', function ($scope, $modal, $log) {
+    $scope.items = ['item1', 'item2', 'item3'];
+   // $scope.animationsEnabled = true;
+    $scope.openRevise= function (size) {
         var modalInstance = $modal.open({
-            templateUrl: 'myModalAdd.html',
-            controller: 'commitAddModalCtrl',
+            animation: $scope.animationsEnabled,
+            templateUrl: 'myModalRevise.html',
+            controller: 'ModalInstanceCtrl',
             size: size,
             resolve: {
                 items: function () {
@@ -91,13 +88,45 @@ app.controller('commitListCtrl',['$scope','$http','$stateParams','$httpParamSeri
                 }
             }
         });
-        //模态框调用之后
         modalInstance.result.then(function (selectedItem) {
             $scope.selected = selectedItem;
-            alert('this is a test');
-            console.log(selectedItem);
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
         });
     };
+    $scope.toggleAnimation = function () {
+       $scope.animationsEnabled = !$scope.animationsEnabled;
+    };
+});
+//定义添加模态框
+app.controller('addModalCtrl', function ($scope, $modal, $log) {
+    $scope.items = ['item1', 'item2', 'item3'];
+   $scope.animationsEnabled = true;
+    $scope.openAdd= function (size) {
+        var modalInstance = $modal.open({
+            animation: $scope.animationsEnabled,
+            templateUrl: 'myModalAdd.html',
+            controller: 'ModalInstanceCtrl',
+            size: size,
+            resolve: {
+                items: function () {
+                    return $scope.items;
+                }
+            }
+        });
+        modalInstance.result.then(function (selectedItem) {
+            $scope.selected = selectedItem;
+        }, function () {
+            $log.info('Modal dismissed at: ' + new Date());
+        });
+    };
+    $scope.toggleAnimation = function () {
+       $scope.animationsEnabled = !$scope.animationsEnabled;
+    };
+
+});
+//创建审委会列表控制器
+app.controller('commitListCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
     $scope.commitList=[];
     //表格数据
     $http
@@ -131,3 +160,44 @@ app.controller('commitListCtrl',['$scope','$http','$stateParams','$httpParamSeri
     //分页处理
 
 }]);
+
+
+
+
+
+
+
+//创建public.index中模态框控制器（单模态框处理）
+app.controller('modalCtrl',['$scope','$http',function ($scope,$http) {
+    //请求排期数据
+    $http
+        .get('data/casedata.json')
+        .success(function(data){
+            $scope.caseDataList=data;
+        });
+}]);
+//创建案件排期控制器
+app.controller('caseDateCtrl',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
+    //表格数据
+    $http
+        .get('data/casedatadate.json')
+        .success(function(data){
+            $scope.caseDataDateList=data;
+        });
+    //查询列表
+    $scope.checkoutList={
+        caseNumber:'',
+        caseCause:'',
+        caseStartTime:'',
+        casePersonal:'',
+        caseAnswered:''
+    };
+    //点击查询时，拿到用户的输入
+    $scope.submitCheckout=function () {
+        //将用户查询输入序列化发送给后台
+        var str=$httpParamSerializerJQLike($scope.checkoutList);
+        console.log(str);
+
+    };
+}]);
+

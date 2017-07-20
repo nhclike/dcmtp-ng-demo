@@ -2,55 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0279eac-47ad-418b-ad4a-8e380eb3cc88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/comm/logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/index/blue_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom/committee/add_modal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom/committee/revise_modal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/angular-animate.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/case_index.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/img/logo1.png" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_date.css" afterPath="$PROJECT_DIR$/css/case/case_date.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_date.less" afterPath="$PROJECT_DIR$/css/case/case_date.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_index.css" afterPath="$PROJECT_DIR$/css/case/case_index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_new_build.css" afterPath="$PROJECT_DIR$/css/case/case_new_build.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_new_build.less" afterPath="$PROJECT_DIR$/css/case/case_new_build.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/case_play.less" afterPath="$PROJECT_DIR$/css/case/case_play.less" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/choose.png" afterPath="$PROJECT_DIR$/img/comm/choose.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/commit.png" afterPath="$PROJECT_DIR$/img/index/commit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/connect.png" afterPath="$PROJECT_DIR$/img/comm/connect.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/court.png" afterPath="$PROJECT_DIR$/img/index/court.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/developer.png" afterPath="$PROJECT_DIR$/img/comm/developer.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/down.png" afterPath="$PROJECT_DIR$/img/comm/down.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/exit.png" afterPath="$PROJECT_DIR$/img/comm/exit.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/login_bg.jpg" afterPath="$PROJECT_DIR$/img/comm/login_bg.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/nb_logo.png" afterPath="$PROJECT_DIR$/img/comm/nb_logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/pwd.png" afterPath="$PROJECT_DIR$/img/comm/pwd.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/stop.png" afterPath="$PROJECT_DIR$/img/comm/stop.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/unchoose.png" afterPath="$PROJECT_DIR$/img/comm/unchoose.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/user.png" afterPath="$PROJECT_DIR$/img/comm/user.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/login.js" afterPath="$PROJECT_DIR$/js/login_ctrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom/committee/modaltest.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/ui-bootstrap-tpls-1.3.2.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/comm/modal.css" afterPath="$PROJECT_DIR$/css/comm/modal.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/comm/modal.less" afterPath="$PROJECT_DIR$/css/comm/modal.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/comm/table.css" afterPath="$PROJECT_DIR$/css/comm/table.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/comm/table.less" afterPath="$PROJECT_DIR$/css/comm/table.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/index.less" afterPath="$PROJECT_DIR$/css/index.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user_login.css" afterPath="$PROJECT_DIR$/css/user_login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/user_login.less" afterPath="$PROJECT_DIR$/css/user_login.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/committee/add_modal.html" afterPath="$PROJECT_DIR$/custom/committee/add_modal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/committee/list.html" afterPath="$PROJECT_DIR$/custom/committee/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/committee/revise_modal.html" afterPath="$PROJECT_DIR$/custom/committee/revise_modal.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/court/list.html" afterPath="$PROJECT_DIR$/custom/court/list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/court/meeting.html" afterPath="$PROJECT_DIR$/custom/court/meeting.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/court_attend.html" afterPath="$PROJECT_DIR$/custom/court_attend.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/include/header.html" afterPath="$PROJECT_DIR$/custom/include/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/include/sidebar.html" afterPath="$PROJECT_DIR$/custom/include/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/user_login.html" afterPath="$PROJECT_DIR$/custom/user_login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dmctp.html" afterPath="$PROJECT_DIR$/dmctp.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/angular.min.js" afterPath="$PROJECT_DIR$/js/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/dmctp.js" afterPath="$PROJECT_DIR$/js/dmctp.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index_ctrl.js" afterPath="$PROJECT_DIR$/js/index_ctrl.js" />
     </list>
     <ignored path="jcy_ng_ui_route.iws" />
@@ -70,38 +30,146 @@
     <favorites_list name="jcy_ng_ui_route" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index_ctrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/index_ctrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="62" column="88" lean-forward="false" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/custom/court/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="106" lean-forward="true" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/committee/list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.6954813">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="index_ctrl.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/js/index_ctrl.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2388">
+                  <caret line="199" column="0" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dmctp.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/dmctp.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="57">
+                  <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+                  <folding>
+                    <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="revise_modal.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/committee/revise_modal.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="64" />
+                  <folding>
+                    <element signature="n#div#1;n#!!top" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modal.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/css/comm/modal.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="76">
+                  <caret line="4" column="18" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#242#297#0" expanded="false" />
+                    <element signature="e#313#1515#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/custom/committee/list.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="570">
+                  <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="meeting.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/committee/meeting.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/court/list.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="132" column="40" lean-forward="true" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
+                  <folding>
+                    <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#451#458#1" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#1;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#5856#5863#1" expanded="true" />
+                    <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#1;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="meeting.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/court/meeting.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="add_modal.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/committee/add_modal.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+                  <folding>
+                    <element signature="n#style#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="modaltest.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/custom/committee/modaltest.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="152">
+                  <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index_ctrl.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/index_ctrl.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="110" column="22" lean-forward="true" selection-start-line="110" selection-start-column="22" selection-end-line="110" selection-end-column="22" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -109,6 +177,7 @@
         <option value="Html5" />
         <option value="JavaScript File" />
         <option value="Less File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -151,23 +220,25 @@
         <option value="$PROJECT_DIR$/js/login.js" />
         <option value="$PROJECT_DIR$/css/table.less" />
         <option value="$PROJECT_DIR$/custom/committee/meeting.html" />
-        <option value="$PROJECT_DIR$/css/comm/modal.less" />
         <option value="$PROJECT_DIR$/css/comm/table.less" />
         <option value="$PROJECT_DIR$/css/index.less" />
         <option value="$PROJECT_DIR$/custom/include/sidebar.html" />
         <option value="$PROJECT_DIR$/custom/user_login.html" />
         <option value="$PROJECT_DIR$/js/login_ctrljs" />
         <option value="$PROJECT_DIR$/js/login_ctrl.js" />
-        <option value="$PROJECT_DIR$/dmctp.html" />
         <option value="$PROJECT_DIR$/css/user_login.less" />
         <option value="$PROJECT_DIR$/custom/include/header.html" />
-        <option value="$PROJECT_DIR$/custom/committee/revise_modal.html" />
-        <option value="$PROJECT_DIR$/js/dmctp.js" />
-        <option value="$PROJECT_DIR$/custom/court/list.html" />
         <option value="$PROJECT_DIR$/custom/court/meeting.html" />
-        <option value="$PROJECT_DIR$/custom/committee/add_modal.html" />
-        <option value="$PROJECT_DIR$/custom/committee/list.html" />
+        <option value="$PROJECT_DIR$/custom/court/list.html" />
+        <option value="$PROJECT_DIR$/dmctp.html" />
+        <option value="$PROJECT_DIR$/js/ui-bootstrap-tpls.min.js" />
+        <option value="$PROJECT_DIR$/custom/committee/modaltest.html" />
+        <option value="$PROJECT_DIR$/js/dmctp.js" />
+        <option value="$PROJECT_DIR$/custom/committee/revise_modal.html" />
         <option value="$PROJECT_DIR$/js/index_ctrl.js" />
+        <option value="$PROJECT_DIR$/custom/committee/add_modal.html" />
+        <option value="$PROJECT_DIR$/css/comm/modal.less" />
+        <option value="$PROJECT_DIR$/custom/committee/list.html" />
       </list>
     </option>
   </component>
@@ -266,6 +337,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angular-animate.js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jcy_ng_ui_route" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dcmtp_ng_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="custom" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -338,6 +427,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jcy_ng_ui_route" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dcmtp_ng_demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -349,7 +456,7 @@
     <property name="last_opened_file_path" value="E:/MyProject/kfl_ionic4.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -367,11 +474,11 @@
       <recent name="C:\xampp\htdocs\dmctp\custom\include" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ngdemo\dcmtp_ng_demo\js" />
       <recent name="C:\xampp\htdocs\ngdemo\dcmtp_ng_demo\css" />
       <recent name="C:\xampp\htdocs\ngdemo\dcmtp_ng_demo\css\comm\case" />
       <recent name="C:\xampp\htdocs\ngdemo\dcmtp_ng_demo\img\comm" />
       <recent name="C:\xampp\htdocs\ngdemo\dcmtp_ng_demo\img\index" />
-      <recent name="C:\xampp\htdocs\dmctp\css\comm" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -871,12 +978,12 @@
       <workItem from="1500447377278" duration="19000" />
       <workItem from="1500447404411" duration="1245000" />
       <workItem from="1500453485910" duration="14573000" />
-      <workItem from="1500512312890" duration="20108000" />
+      <workItem from="1500512312890" duration="30511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61703000" />
+    <option name="totallyTimeSpent" value="72106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -969,13 +1076,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/court_attend.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/court_attend.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -996,13 +1096,6 @@
     <entry file="file://$PROJECT_DIR$/css/case/case_play.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui-bootstrap-tpls.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1254">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
@@ -1170,14 +1263,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/comm/modal.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/login_ctrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -1236,64 +1321,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/committee/meeting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/angular.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/dmctp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="32" lean-forward="true" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/committee/revise_modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/court/meeting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/committee/add_modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-931">
-          <caret line="14" column="70" lean-forward="false" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dmctp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="48" lean-forward="false" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1313,26 +1345,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/index_ctrl.js">
+    <entry file="file://$PROJECT_DIR$/js/ui-bootstrap-tpls.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="62" column="88" lean-forward="false" selection-start-line="62" selection-start-column="88" selection-end-line="62" selection-end-column="88" />
+        <state relative-caret-position="-21147">
+          <caret line="7" column="10500" lean-forward="true" selection-start-line="7" selection-start-column="10500" selection-end-line="7" selection-end-column="10500" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/dmctp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="57" lean-forward="false" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/committee/list.html">
+    <entry file="file://$PROJECT_DIR$/custom/committee/meeting.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="323">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/court/meeting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/court/list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="106" lean-forward="true" selection-start-line="11" selection-start-column="106" selection-end-line="11" selection-end-column="106" />
+        <state relative-caret-position="304">
+          <caret line="132" column="40" lean-forward="true" selection-start-line="132" selection-start-column="40" selection-end-line="132" selection-end-column="40" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#451#458#1" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#5856#5863#1" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#0;n#div#6;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/committee/modaltest.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dmctp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="43" lean-forward="true" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+          <folding>
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index_ctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2388">
+          <caret line="199" column="0" lean-forward="true" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/committee/revise_modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="64" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/committee/add_modal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="64" lean-forward="false" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/comm/modal.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="18" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <element signature="e#242#297#0" expanded="false" />
+            <element signature="e#313#1515#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/committee/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="63" column="19" lean-forward="true" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
           <folding />
         </state>
       </provider>

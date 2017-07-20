@@ -2,12 +2,11 @@
 <link rel="stylesheet" href="css/comm/modal.css">
 
   <!--修改审委会模态框-->
-  <div class="modal fade" id="commit_revise" data-backdrop="static">
-    <div class="model_center">
-      <div class="modal-content" style="width: 800px;height:600px" >
+
+
         <div class="modal-header">
-          <span class="close" data-dismiss="modal">&times;</span>
-          <h3>添加审委会</h3>
+          <span class="close" ng-click="cancel()">&times;</span>
+          <h3>修改审委会</h3>
         </div>
         <div class="modal-body">
           <form id="form1" class="form-horizontal" style="width:100%;height:100%">
@@ -108,17 +107,16 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <div class="col-md-8 col-md-offset-2 col-xs-6 col-xs-offset-3 text-center">
-                <button  type="submit" class="btn btn-primary" >添加</button>
-                <button class="btn btn-default" style="color: #acacac;background: #fff">取消</button>
-              </div>
-            </div>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" ng-click="ok()">
+            确认
+          </button>
+          <button class="btn btn-warning" ng-click="cancel()">退出</button>
+        </div>
+
+
 
 
 

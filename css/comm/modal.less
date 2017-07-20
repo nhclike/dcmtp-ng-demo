@@ -1,76 +1,83 @@
 @theme_color:#0093f9;
-#childContent{
+
 	.modal{
-		padding: 30px;
-		.model_center{
-			position: fixed;
-			top:50%;
-			left:50%;
-			transform: translate(-50%,-50%);
+		width: 800px;
+		height: 650px;
+		position: fixed;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-50%);
+		.modal-dialog{
+			margin: 0;
+			width: 100%;
+			height: 100%;
 			.modal-content{
 				.modal-header{
 					background: @theme_color;
 					color:#fff;
 				}
-			}
-			.modal-body{
-				form{
-					.form-group{
-						margin:10px auto;
-						height:66px ;
-						label{
-							font-size: 18px;
-							font-weight: normal;
-							color:#596E81;
-							padding: 0;
-							margin:8px auto;
-						}
-						div{
-							div.row{
-								div.col-xs-12{
-								}
-								p.help_block{
-									margin: 0 20px !important;
-									color:#acacac;
-								}
-							}
-							button{
-								width: 100px;
-								height: 40px;
-								margin: 0 20px;
-								outline: none;
-								color:#acacac;
+				.modal-body{
+					form{
+						.form-group{
+							margin:10px auto;
+							height:66px ;
+							label{
 								font-size: 18px;
+								font-weight: normal;
+								color:#596E81;
+								padding: 0;
+								margin:8px auto;
 							}
-							#btn_add{
-								background: #0093f9;
-								color: #fff;
+							div{
+								div.row{
+									div.col-xs-12{
+									}
+									p.help_block{
+										margin: 0 20px !important;
+										color:#acacac;
+									}
+								}
+								button{
+									width: 100px;
+									height: 40px;
+									margin: 0 20px;
+									outline: none;
+									color:#acacac;
+									font-size: 18px;
+								}
+								#btn_add{
+									background: #0093f9;
+									color: #fff;
+								}
+								select{
+									width: 100%;
+									font-size: 15px;
+									color:#acacac;
+									border: solid 1px #ddd;
+									appearance:none;
+									-moz-appearance:none;
+									-webkit-appearance:none;
+									background: url("../images/down.png") no-repeat scroll 180px center transparent;
+									padding-right: 14px;
+								}
+								select::-ms-expand { display: none; }
 							}
-							select{
+							input{
+								font-size: 16px;
 								width: 100%;
-								font-size: 15px;
-								color:#acacac;
-								border: solid 1px #ddd;
-								appearance:none;
-								-moz-appearance:none;
-								-webkit-appearance:none;
-								background: url("../images/down.png") no-repeat scroll 180px center transparent;
-								padding-right: 14px;
 							}
-							select::-ms-expand { display: none; }
-						}
-						input{
-							font-size: 16px;
-							width: 100%;
-						}
-						textarea{
-							font-size: 16px;
-							width: 100%;
+							textarea{
+								font-size: 16px;
+								width: 100%;
+							}
 						}
 					}
+				}
+				.modal-footer{
+
 				}
 			}
 		}
 	}
-}
+
 

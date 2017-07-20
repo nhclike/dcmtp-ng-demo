@@ -1,6 +1,247 @@
 
 <link rel="stylesheet" href="css/comm/table.css">
-<div id="childContent">
+<link rel="stylesheet" href="css/comm/modal.css">
+<div id="childContent" ng-controller="caseDateCtrl">
+
+  <!--添加审委会模态框-->
+  <div class="modal fade" id="commit_add" data-backdrop="static" ng-controller="modalCtrl">
+    <div class="model_center">
+      <div class="modal-content" style="width: 800px;height:600px" >
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h3>添加审委会</h3>
+        </div>
+        <div class="modal-body">
+          <form id="form1" class="form-horizontal" style="width:100%;height:100%">
+            <input type="hidden" name="operator" id="operator" value="${sessionScope.currentUser.name}"/>
+            <div class="form-group">
+              <label for="name" class="control-label col-sm-2 col-md-2">审委会名称:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="name" id="name">
+                  </div>
+                </div>
+              </div>
+              <label for="courtName" class="control-label col-sm-2 col-md-2">所属法院:</label>
+              <div class="col-sm-4 col-md-4">
+                <select class="form-control" name="courtCode" id="court">
+                  <c:forEach items="${courtList}" var="court">
+                    <option value="${court.courtCode}">福州中院</option>
+                  </c:forEach>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="account" class="control-label col-sm-2 col-md-2">审委会账号:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="account" id="account">
+                  </div>
+                </div>
+              </div>
+              <label for="url" class="control-label col-sm-2 col-md-2">审委会URL:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="url" id="url">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description" class="control-label col-sm-2 col-md-2">审委会描述:</label>
+              <div class="col-sm-10 col-md-10">
+                <textarea  class="form-control" rows=2 name="description" id="description"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label col-sm-2 col-md-2">审委会密码:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="password" id="password">
+                  </div>
+                </div>
+              </div>
+              <label for="pwdConfirm" class="control-label col-sm-2 col-md-2">密码确认:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="pwdConfirm" id="pwdConfirm">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="databaseServer" class="control-label col-sm-2 col-md-2">服务器:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseServer" id="databaseServer">
+                  </div>
+                </div>
+              </div>
+              <label for="databaseName" class="control-label col-sm-2 col-md-2">数据库:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseName" id="databaseName">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="databaseAccount" class="control-label col-sm-2 col-md-2">用户名:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseAccount" id="databaseAccount">
+                  </div>
+                </div>
+              </div>
+              <label for="databasePassword" class="control-label col-sm-2 col-md-2">密码:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="databasePassword" id="databasePassword">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-8 col-md-offset-2 col-xs-6 col-xs-offset-3 text-center">
+                <button id="btn_add" type="submit" class="btn btn-primary" >添加</button>
+                <button class="btn btn-default" style="color: #acacac;background: #fff">取消</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--修改审委会模态框-->
+  <div class="modal fade" id="commit_revise" data-backdrop="static">
+    <div class="model_center">
+      <div class="modal-content" style="width: 800px;height:600px" >
+        <div class="modal-header">
+          <span class="close" data-dismiss="modal">&times;</span>
+          <h3>修改审委会</h3>
+        </div>
+        <div class="modal-body">
+          <form id="form1" class="form-horizontal" style="width:100%;height:100%">
+            <input type="hidden" name="operator" id="operator" value="${sessionScope.currentUser.name}"/>
+            <div class="form-group">
+              <label for="name" class="control-label col-sm-2 col-md-2">审委会名称:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="name" id="name">
+                  </div>
+                </div>
+              </div>
+              <label for="courtName" class="control-label col-sm-2 col-md-2">所属法院:</label>
+              <div class="col-sm-4 col-md-4">
+                <select class="form-control" name="courtCode" id="court">
+                  <c:forEach items="${courtList}" var="court">
+                    <option value="${court.courtCode}">福州中院</option>
+                  </c:forEach>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="account" class="control-label col-sm-2 col-md-2">审委会账号:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="account" id="account">
+                  </div>
+                </div>
+              </div>
+              <label for="url" class="control-label col-sm-2 col-md-2">审委会URL:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="url" id="url">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="description" class="control-label col-sm-2 col-md-2">审委会描述:</label>
+              <div class="col-sm-10 col-md-10">
+                <textarea  class="form-control" rows=2 name="description" id="description"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password" class="control-label col-sm-2 col-md-2">审委会密码:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="password" id="password">
+                  </div>
+                </div>
+              </div>
+              <label for="pwdConfirm" class="control-label col-sm-2 col-md-2">密码确认:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="pwdConfirm" id="pwdConfirm">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="databaseServer" class="control-label col-sm-2 col-md-2">服务器:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseServer" id="databaseServer">
+                  </div>
+                </div>
+              </div>
+              <label for="databaseName" class="control-label col-sm-2 col-md-2">数据库:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseName" id="databaseName">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="databaseAccount" class="control-label col-sm-2 col-md-2">用户名:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="text" class="form-control" name="databaseAccount" id="databaseAccount">
+                  </div>
+                </div>
+              </div>
+              <label for="databasePassword" class="control-label col-sm-2 col-md-2">密码:</label>
+              <div class="col-sm-4 col-md-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <input type="password" class="form-control" name="databasePassword" id="databasePassword">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-md-8 col-md-offset-2 col-xs-6 col-xs-offset-3 text-center">
+                <button  type="submit" class="btn btn-primary" >添加</button>
+                <button class="btn btn-default" style="color: #acacac;background: #fff">取消</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="container-fluid" >
     <!--查询表格-->
     <div class="row">
@@ -15,9 +256,7 @@
           <label class="control-label" for="txt_search_parentId">上级法院</label>
           <select name="parentId" id="txt_search_parentId" class="form-control">
             <option value="">----全部----</option>
-            <c:forEach items="${courtList}" var="court" varStatus="status">
-              <option value="${court.id}">${court.name}</option>
-            </c:forEach>
+
           </select>
         </div>
         <div class="form-group col-xs-4">
@@ -25,9 +264,7 @@
                   class="btn btn-primary" onclick="fnSearch();">查询</button>
         </div>
         <div class="form-group  col-xs-2">
-
-          <button type="button"  id="btn_add"
-                  class="btn btn-info" onclick="fnAdd();">添加</button>
+          <button type="button" id="btn_add" class="btn btn-info" data-toggle="modal" data-target="#commit_add">添加</button>
         </div>
       </form>
     </div>
@@ -61,10 +298,8 @@
                 <td>{{item.casePersonal}}</td>
                 <td>{{item.caseAnswer}}</td>
                 <td>
-                  <a href="">编辑</a>
-                  <a href="">删除</a>
-                  <a href="">查看</a>
-                  <a href="">进入审讯</a>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#commit_revise">修改</button>
+                  <button class="btn">删除</button>
                 </td>
               </tr>
               </tbody>

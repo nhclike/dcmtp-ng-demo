@@ -1,32 +1,36 @@
-#childContent .modal {
-  padding: 30px;
-}
-#childContent .modal .model_center {
+.modal {
+  width: 800px;
+  height: 650px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#childContent .modal .model_center .modal-content .modal-header {
+.modal .modal-dialog {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-dialog .modal-content .modal-header {
   background: #0093f9;
   color: #fff;
 }
-#childContent .modal .model_center .modal-body form .form-group {
+.modal .modal-dialog .modal-content .modal-body form .form-group {
   margin: 10px auto;
   height: 66px ;
 }
-#childContent .modal .model_center .modal-body form .form-group label {
+.modal .modal-dialog .modal-content .modal-body form .form-group label {
   font-size: 18px;
   font-weight: normal;
   color: #596E81;
   padding: 0;
   margin: 8px auto;
 }
-#childContent .modal .model_center .modal-body form .form-group div div.row p.help_block {
+.modal .modal-dialog .modal-content .modal-body form .form-group div div.row p.help_block {
   margin: 0 20px !important;
   color: #acacac;
 }
-#childContent .modal .model_center .modal-body form .form-group div button {
+.modal .modal-dialog .modal-content .modal-body form .form-group div button {
   width: 100px;
   height: 40px;
   margin: 0 20px;
@@ -34,11 +38,11 @@
   color: #acacac;
   font-size: 18px;
 }
-#childContent .modal .model_center .modal-body form .form-group div #btn_add {
+.modal .modal-dialog .modal-content .modal-body form .form-group div #btn_add {
   background: #0093f9;
   color: #fff;
 }
-#childContent .modal .model_center .modal-body form .form-group div select {
+.modal .modal-dialog .modal-content .modal-body form .form-group div select {
   width: 100%;
   font-size: 15px;
   color: #acacac;
@@ -49,14 +53,14 @@
   background: url("../images/down.png") no-repeat scroll 180px center transparent;
   padding-right: 14px;
 }
-#childContent .modal .model_center .modal-body form .form-group div select::-ms-expand {
+.modal .modal-dialog .modal-content .modal-body form .form-group div select::-ms-expand {
   display: none;
 }
-#childContent .modal .model_center .modal-body form .form-group input {
+.modal .modal-dialog .modal-content .modal-body form .form-group input {
   font-size: 16px;
   width: 100%;
 }
-#childContent .modal .model_center .modal-body form .form-group textarea {
+.modal .modal-dialog .modal-content .modal-body form .form-group textarea {
   font-size: 16px;
   width: 100%;
 }
