@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html ng-app="procuratorate" style="height: 100%">
+<html ng-app="mainIndex" style="height: 100%">
 <head lang="zh-cn">
-	<script src="js/angular.min.js"></script>
-	<script src="js/angular-animate.js"></script>
-	<script src="js/ui-bootstrap-tpls.min.js"></script>
-	<script src="js/angular-ui-router.min.js"></script>
+	<script src="js/ng/angular.min.js"></script>
+	<script src="js/ng/angular-animate.js"></script>
+	<script src="js/ng/ui-bootstrap-tpls.min.js"></script>
+	<script src="js/ng/angular-ui-router.min.js"></script>
 	<meta charset="UTF-8">
 	<!--2,viewport-->
 	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
@@ -12,22 +12,23 @@
 	<meta http-equiv="x-ua-compatible" content="IE=edge"/>
 	<title>检察院审讯指挥系统</title>
 	<!--[if lt IE 9]>
-	<script src="js/html5shiv.min.js"></script>
-	<script src="js/respond.min.js"></script>
+	<script src="js/bootstrap/html5shiv.min.js"></script>
+	<script src="js/bootstrap/respond.min.js"></script>
 	<![endif]-->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 
 </head>
-<body ng-controller="parent">
+<body ng-controller="mainParent">
 	<!--指定盛放代码片段的容器-->
 	<div ui-view="main">
 
 	</div>
-	<script src="js/jquery-1.11.3.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap/jquery-1.11.3.js"></script>
+	<script src="js/bootstrap/bootstrap.min.js"></script>
 	<script src="js/dmctp.js"></script>
-	<script src="js/login_ctrl.js"></script>
 	<script src="js/index_ctrl.js"></script>
-	<script src="js/index_view.js"></script>
+	<script src="js/login_ctrl.js"></script>
+	<script src="js/commitee/commitListCtrl.js"></script>
+
 </body>
 </html>

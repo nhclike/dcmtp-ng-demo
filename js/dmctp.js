@@ -1,5 +1,5 @@
 //创建模块
-var app=angular.module('procuratorate',['ng','ui.router','ui.bootstrap']);
+var app=angular.module('mainIndex',['ng','ui.router','ui.bootstrap']);
 
 //配置状态
 app.config(function ($stateProvider, $urlRouterProvider) {
@@ -11,10 +11,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 						templateUrl: 'custom/user_login.html'
 					}
 				}
-			})
-			.state('courtAttend',{
-				url:'/mycourtAttend',
-				templateUrl:'custom/court_attend.html'
 			})
 			.state('admin', {
 				url: '/myadmin',
@@ -35,6 +31,10 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 				url: '^/myadmin.commitMeeting',
 				templateUrl: 'custom/committee/meeting.html'
 			})
+        	.state('admin.commitChart', {
+           	 	url: '^/myadmin.commitChart',
+            	templateUrl: 'custom/committee/chart.html'
+        	})
 			.state('admin.courtList', {
 				url: '^/myadmin.courtList',
 				templateUrl: 'custom/court/list.html'
@@ -43,17 +43,20 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 				url: '^/myadmin.courtMeeting',
 				templateUrl: 'custom/court/meeting.html'
 			})
+
 	$urlRouterProvider.otherwise('/mylogin');
 });
 
 
 //创建父控制器
-app.controller('parent',['$scope','$state',function($scope,$state){
+app.controller('mainParent',['$scope','$state',function($scope,$state){
 	//定义跳转方法jump
 	$scope.jump = function (desState, params) {
 		console.log(' jump func is called ');
 		$state.go(desState, params);
 	};
+    // $leadInto.getPath();
+    // $leadInto.leadScript('/dcmtp_ng_demo/js/index_ctrl.js');
 }]);
 //自定义服务判断ie
 app.service('$IsIe',function () {
@@ -73,9 +76,29 @@ app.service('$AutoHeight',function () {
         $('#section .container').height(container_height);
         $('#section .container .Menu').height(container_height);
         $('#context_show').height(container_height);
-    }
+    };
     this.loginHeight=function () {
         var window_height=$(window).height();
         $('#login_content').height(window_height);
     }
 });
+//自定义文件引入服务
+// app.service('$leadInto',function () {
+//     this.getPath= function(){
+// 		var pathName = document.location.pathname;
+// 		var index = pathName.substr(1).indexOf("/");
+// 		var path = pathName.substr(0,index+1);
+// 		console.log(path);
+// 		return path;
+// 	};
+//     this.leadScript=function (path) {
+//         var context = this.getPath();
+//         console.log(context);
+//         document.write('<script type="text/javascript" src="'+context+path+'"></script>');
+//     };
+//     this.leadStyleSheet=function (path) {
+//         var context = this.getPath();
+//         document.write('<link rel="stylesheet" type="text/css" href="'+context+path+'">');
+//     }
+//
+// });
