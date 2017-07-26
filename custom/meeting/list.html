@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="../css/comm/table.css">
+<div id="childContent">
+	<div class="container-fluid" >
+		<!--查询表格-->
+		<div class="row">
+			<h2>会议列表</h2>
+			<!--表格-->
+			<form id="formSearch" class="form-inline" action="" method="post">
+				<div class="form-group col-xs-3">
+					<label for="">类型</label>
+					<input type="text" name="name" class="form-control" />
+				</div>
+				<div class="form-group col-xs-3">
+					<label for="">状态</label>
+					<input type="text" name="name" class="form-control" />
+				</div>
+				<div class="form-group col-xs-3">
+					<label for="">模糊值</label>
+					<input type="text" name="name" class="form-control" />
+				</div>
+
+				<div class="form-group  col-xs-3">
+					<button type="button" id="btn_query" class="btn btn-primary">查询</button>
+					<button type="button" id="btn_add" class="btn btn-primary">添加</button>
+				</div>
+			</form>
+		</div>
+
+		<!--表格-->
+		<div class="row">
+			<div class="col-xs-12">
+				<!--table-->
+				<div id="table_content">
+					<div  style="display:block; max-height:500px;width:100%;overflow:auto;overflow-x:hidden" >
+						<table class="table text-center table-hover" cellpadding="2rem" style="margin: 0" >
+							<thead>
+							<tr>
+								<th class="text-center">会议名称</th>
+								<th class="text-center">会议状态</th>
+								<th class="text-center">会议时间</th>
+								<th class="text-center">会议次数</th>
+								<th class="text-center">会议类别</th>
+								<th class="text-center">操作</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr ng-repeat="item in meetingList track by $index">
+								<td>{{item.meetingName}}</td>
+								<td>{{item.meetingStatue}}</td>
+								<td>{{item.meetingTime}}</td>
+								<td>{{item.meetingNumber}}</td>
+								<td>{{item.meetingType}}</td>
+								<td>
+									<a href="">编辑</a>
+									<a href="">查看</a>
+								</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--底部页签-->
+		<div class="row">
+			<div>
+				<button class="btn btn-default">上一页</button>
+				<button class="btn btn-default">下一页</button>
+			</div>
+		</div>
+	</div>
+</div>

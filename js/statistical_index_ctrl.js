@@ -1,24 +1,30 @@
 //创建模块
-var app=angular.module('meetingIndex',['ng','ui.router']);
+var app=angular.module('statisticalIndex',['ng','ui.router']);
 
 //配置状态
 app.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-        .state('list', {
-            url: '^/mylist',
-            templateUrl: 'meeting/list.html',
-            controller:'meetingList'
+        .state('commit', {
+            url: '^/mycommit',
+            templateUrl: 'statistical/committee.html',
+            controller:'statisticalCommittee'
         })
-        .state('topic', {
-            url: '^/mytopic',
-            templateUrl: 'meeting/topic.html'
+        .state('meeting', {
+            url: '^/mymeeting',
+            templateUrl: 'statistical/meeting.html',
+            controller:'statisticalMeeting'
+        })
+        .state('other', {
+            url: '^/myother',
+            templateUrl: 'statistical/other.html',
+            controller:'statisticalOther'
         })
     $urlRouterProvider.otherwise('/mylist');
 });
 
 
 //创建父控制器
-app.controller('meetingParent',['$scope','$state',function($scope,$state){
+app.controller('statisticalParent',['$scope','$state',function($scope,$state){
     //定义跳转方法jump
     $scope.jump = function (desState, params) {
         console.log(' jump func is called ');
@@ -38,15 +44,16 @@ app.controller('HeaderCtrl',['$scope',function($scope){
     }
 }]);
 //创建sidebar控制器
-app.controller('meetingSidebarCtrl',['$scope',function($scope){
+app.controller('statisticalSidebarCtrl',['$scope',function($scope){
     //定义左边栏显示内容数据
     $scope.showList = [
-        {imgUrl:'index_1.png',text:'会议',jumpTip:'list'},
-        {imgUrl:'casebuild_1.png',text:'议题',jumpTip:'topic'},
+        {imgUrl:'index_1.png',text:'会议台账',jumpTip:'meeting'},
+        {imgUrl:'casebuild_1.png',text:'委员会情况',jumpTip:'commit'},
+        {imgUrl:'casebuild_1.png',text:'其他统计',jumpTip:'other'}
     ];
 }]);
 //创建会议列表控制器
-app.controller('meetingList',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
+app.controller('statisticalMeeting',['$scope','$http','$stateParams','$httpParamSerializerJQLike',function($scope,$http,$stateParams,$httpParamSerializerJQLike){
     $scope.meetingList=[];
     //表格数据
     $http
@@ -56,7 +63,7 @@ app.controller('meetingList',['$scope','$http','$stateParams','$httpParamSeriali
         });
     //查询列表
     $scope.checkoutList={
-        courtName:'',
+        courtName:''
     };
     //监听用户输入
     $scope.$watch('checkoutList.courtName', function () {
@@ -79,4 +86,7 @@ app.controller('meetingList',['$scope','$http','$stateParams','$httpParamSeriali
     };
     //分页处理
 
+}]);
+app.controller('statisticalCommittee',['$scope',function ($scope) {
+    $scope.test='this is a test';
 }]);

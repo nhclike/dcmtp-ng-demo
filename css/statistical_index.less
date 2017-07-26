@@ -1,0 +1,51 @@
+@theme_color:#0093F9;
+@bg_color:#D3E5FF;
+@dark_bg_color:#D4E6FF;
+@li_bg_color:#EEF5FF;
+@dark_theme_color:#1D4B9E;
+//重写
+body,ul,li,p,h1,h2,h3,h4,h5,h6,img,br,hr,table,tr,td,dl,dt,dd,form {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+.clearfloat:after{  /*最简方式*/
+	content: '';
+	display: block;
+	clear: both;
+}
+#section{
+	padding-top:90px;
+	.container{
+		width: 100%;
+		.row{
+			.Menu{
+				position: absolute;
+				top:90px;
+				left:0;
+				z-index:999;
+				width: 280px;
+				padding: 0;
+				background: @li_bg_color;
+				ul{
+
+					li{
+						height: 100px;
+						width: 100%;
+						background: @theme_color;
+						color:#fff;
+						font-size: 25px;
+					}
+				}
+			}
+			#context_show{
+				position: absolute;
+				top:90px;
+				left:0;
+				padding-left: 280px;
+				width: 100%;
+				background-color:#fff ;
+			}
+		}
+	}
+}

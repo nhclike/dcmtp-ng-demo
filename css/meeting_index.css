@@ -1,0 +1,60 @@
+body,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+br,
+hr,
+table,
+tr,
+td,
+dl,
+dt,
+dd,
+form {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+.clearfloat:after {
+  /*最简方式*/
+  content: '';
+  display: block;
+  clear: both;
+}
+#section {
+  padding-top: 90px;
+}
+#section .container {
+  width: 100%;
+}
+#section .container .row .Menu {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  z-index: 999;
+  width: 280px;
+  padding: 0;
+  background: #EEF5FF;
+}
+#section .container .row .Menu ul li {
+  height: 100px;
+  width: 100%;
+  background: #0093F9;
+  color: #fff;
+  font-size: 25px;
+}
+#section .container .row #context_show {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  padding-left: 280px;
+  width: 100%;
+  background-color: #fff ;
+}

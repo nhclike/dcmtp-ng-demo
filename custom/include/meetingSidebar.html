@@ -1,0 +1,11 @@
+<div ng-controller="meetingSidebarCtrl">
+	<ul class="list-unstyled text-center" id="tab_list">
+		<li ng-click="jump(item.jumpTip)" ng-repeat="item in showList">
+			<div>
+				<img ng-src="../img/meeting/{{item.imgUrl}}" alt="">
+				<br>
+				<span>{{item.text}}</span>
+			</div>
+		</li>
+	</ul>
+</div>

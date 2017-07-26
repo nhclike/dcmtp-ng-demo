@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="meetingIndex">
+<html lang="en" ng-app="statisticalIndex">
 <!--1,lang="zh-cn"-->
 <head lang="zh-cn">
   <meta charset="UTF-8">
@@ -17,9 +17,9 @@
   <![endif]-->
   <!--6引入bootstrap.css-->
   <link rel="stylesheet" href="../css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="../css/meeting_index.css">
+  <link rel="stylesheet" href="../css/statistical_index.css">
 </head>
-<body ng-controller="meetingParent">
+<body ng-controller="statisticalParent">
 
 <div ng-include="'include/header.html'"></div>
   <!--中间主体内容-->
@@ -27,7 +27,7 @@
     <div class="container">
       <div class="row">
         <div class="Menu">
-          <div ng-controller="meetingSidebarCtrl">
+          <div ng-controller="statisticalSidebarCtrl">
             <ul class="list-unstyled text-center" id="tab_list">
               <li ng-click="jump(item.jumpTip)" ng-repeat="item in showList">
                 <div>
@@ -53,7 +53,7 @@
 <!--引入jquery,bootstrap js-->
 <script src="../js/bootstrap/jquery-1.11.3.js"></script>
 <script src="../js/bootstrap/bootstrap.min.js"></script>
-<script src="../js/meeting_index_ctrl.js"></script>
+<script src="../js/statistical_index_ctrl.js"></script>
 
 </body>
 </html>
