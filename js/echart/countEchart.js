@@ -195,9 +195,7 @@ function showProvince() {
                                         left:'center',
                                         color: '#1164be',
                                         fontSize:20
-
                                     }
-
                                 }
                             },
                             emphasis: {
