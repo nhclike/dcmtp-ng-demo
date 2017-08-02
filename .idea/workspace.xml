@@ -2,72 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0279eac-47ad-418b-ad4a-8e380eb3cc88" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/h1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/left_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/right_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/book/wood.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/images/arrow-next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/images/arrow-prev.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/images/shadow-top-back.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/images/shadow-top-forward.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/images/shadow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/ajax-loader.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/buttons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/circle.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/h1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/left_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/right_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/images/wood.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom/bookview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/custom/include/header_nong.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bookview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery-1.11.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery-1.4.4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery-sign.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery-sign.mini.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.easing.1.3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/css/bookview.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin/bookview/css/signStyle.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/committee/chart.html" afterPath="$PROJECT_DIR$/custom/committee/chart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/statistical_index.html" afterPath="$PROJECT_DIR$/custom/statistical_index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/echart/countEchart.js" afterPath="$PROJECT_DIR$/js/echart/countEchart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/bookview.html" afterPath="$PROJECT_DIR$/custom/bookview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/custom/meeting_index.html" afterPath="$PROJECT_DIR$/custom/meeting_index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/bookview.js" afterPath="$PROJECT_DIR$/js/bookview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js" afterPath="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js" />
     </list>
     <ignored path="jcy_ng_ui_route.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -87,16 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="bookview.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="bookview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/bookview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.booklet.1.1.0.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2583">
+              <caret line="594" column="61" lean-forward="true" selection-start-line="594" selection-start-column="61" selection-end-line="594" selection-end-column="61" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery.booklet.1.1.0.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,8 +66,8 @@
       <file leaf-file-name="bookview.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/bookview.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="80" column="37" lean-forward="false" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+            <state relative-caret-position="513">
+              <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
               <folding>
                 <element signature="e#398#5754#0" expanded="false" />
               </folding>
@@ -136,8 +98,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/case/case_look.html" />
-        <option value="$PROJECT_DIR$/jcyzh.html" />
         <option value="$PROJECT_DIR$/custom/case/case_index.html" />
         <option value="$PROJECT_DIR$/js/jcyzh.js" />
         <option value="$PROJECT_DIR$/js/case_date_ctrl.js" />
@@ -182,11 +142,13 @@
         <option value="$PROJECT_DIR$/custom/photoview.html" />
         <option value="$PROJECT_DIR$/js/bookCtrl.js" />
         <option value="$PROJECT_DIR$/custom/include/header_nong.html" />
-        <option value="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js" />
         <option value="$PROJECT_DIR$/custom/committee/chart.html" />
         <option value="$PROJECT_DIR$/plugin/bookview/css/bookview.css" />
+        <option value="$PROJECT_DIR$/custom/meeting_index.html" />
         <option value="$PROJECT_DIR$/js/bookview.js" />
         <option value="$PROJECT_DIR$/custom/bookview.html" />
+        <option value="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css" />
+        <option value="$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js" />
       </list>
     </option>
   </component>
@@ -427,7 +389,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.22918707" />
-    <property name="last_opened_file_path" value="E:/nhcworkplace/ycsxzh" />
+    <property name="last_opened_file_path" value="E:/nhcworkplace/zxzh" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -955,12 +917,20 @@
       <workItem from="1500512312890" duration="33361000" />
       <workItem from="1500858418450" duration="2526000" />
       <workItem from="1501586295020" duration="694000" />
-      <workItem from="1501652381010" duration="10786000" />
+      <workItem from="1501652381010" duration="16082000" />
     </task>
+    <task id="LOCAL-00001" summary="增加图片翻页预览页面">
+      <created>1501664353246</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1501664353246</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88962000" />
+    <option name="totallyTimeSpent" value="94258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
@@ -984,7 +954,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22125813" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12579957" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -1033,6 +1003,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -1044,6 +1040,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加图片翻页预览页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加图片翻页预览页面" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -1053,7 +1053,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/court_attend.js" />
     <entry file="file://$PROJECT_DIR$/css/case/case_date.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1266,14 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/meeting_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/user_login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
@@ -1287,7 +1278,7 @@
         <state relative-caret-position="57">
           <caret line="3" column="43" lean-forward="false" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1313,7 +1304,7 @@
         <state relative-caret-position="298">
           <caret line="27" column="81" lean-forward="true" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1333,10 +1324,10 @@
         <state relative-caret-position="551">
           <caret line="32" column="111" lean-forward="false" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="111" />
           <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1354,50 +1345,14 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.easing.1.3.js">
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3154">
-          <caret line="143" column="10" lean-forward="true" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/css/bookview.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery-sign.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1539">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1411,17 +1366,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/css/bookview.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1013">
+          <caret line="29" column="39" lean-forward="true" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.easing.1.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/meeting_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/bookview.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="80" column="37" lean-forward="false" selection-start-line="80" selection-start-column="37" selection-end-line="80" selection-end-column="37" />
+        <state relative-caret-position="513">
+          <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
           <folding>
             <element signature="e#398#5754#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery-1.11.1.min.js">
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery-sign.mini.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1429,14 +1410,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery-sign.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1583">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom/bookview.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="69" column="19" lean-forward="false" selection-start-line="69" selection-start-column="19" selection-end-line="69" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin/bookview/booklet/jquery.booklet.1.1.0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2583">
+          <caret line="594" column="61" lean-forward="true" selection-start-line="594" selection-start-column="61" selection-end-line="594" selection-end-column="61" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -71,13 +71,20 @@ $(function() {
     });
 
     //设置标记参数
-    $.sign.bindSign('#signx');//初始化
+    $.sign.bindSign('.signx');//初始化
     $.sign.setSignColor('red'); //设置标记框颜色
     $.sign.setBodyColor('rgba(255,255,255,0.5)'); //设置提示背景颜色
     //$.sign.setFontColor('#000');//设置字体颜色
-    var m=$.sign.getSignMessage();//获取所有标记数据，返回为数组
-    console.log(m);
+
     var data=[{left:100,top:20,message:"测试"},{left:300,top:100,message:"测试2"}];
     $.sign.loadingSign(data);//载入标记数据
+
+    //保存事件，点击保存的时候记录下标记的信息
+    $('#save').click(function () {
+        var m=$.sign.getSignMessage();//获取所有标记数据，返回为数组
+        console.log(m);
+        //确定当前标记页数
+
+    });
 
 });

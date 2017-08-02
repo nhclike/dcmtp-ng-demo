@@ -10,7 +10,7 @@
  * Originally based on the work of:
  *	1) Charles Mangin (http://clickheredammit.com/pageflip/)
  */
-;(function($) {
+(function($) {
 		   
 $.fn.booklet = function(options){
 	
