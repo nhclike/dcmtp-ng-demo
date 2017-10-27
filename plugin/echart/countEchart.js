@@ -3,6 +3,7 @@ $(function () {
     initTypeByMeetingEchart();
     initdiscussStatusEchart();
     initcommitStatusEchart();
+  initDynamicsTimeEchart();
 });
 //饼图
 function initDiscussTypeByDiscussEchart() {
@@ -462,9 +463,103 @@ function initcommitStatusEchart() {
     myChart.setOption(option);
 
 }
+//加上时间轴的动态数据展示
+function initDynamicsTimeEchart() {
+  // 基于准备好的dom，初始化echarts实例
+  var myChart = echarts.init(document.getElementById('dynamicData'));
+  function randomData() {
+    now = new Date(+now + oneDay);
+    value = Math.random() * 100;
+    return {
+      name: now.toString(),
+      value: [
+        [now.getFullYear(), now.getMonth() + 1, now.getDate()].join('/'),
+        Math.round(value)
+      ]
+    }
+  }
 
+  var data = [];
+  var now = +new Date(2017,1,1);
+  var oneDay = 24 * 3600 * 1000;
+  var value = Math.random() * 1000;
+  for (var i = 0; i <12; i++) {
+    data.push(randomData());
+  }
+
+  option = {
+    title: {
+      text: '结案率  /月',
+      left: 'center',
+    },
+    tooltip: {
+      trigger: 'axis',
+      formatter: function (params) {
+        params = params[0];
+        var date = new Date(params.name);
+        return date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear() + ' : ' + params.value[1];
+      },
+      axisPointer: {
+        animation: false
+      }
+    },
+    toolbox: {
+      show : true,
+      feature : {
+        mark : {show: true},
+        dataView : {show: true, readOnly: false},
+        magicType : {show: true, type: ['line', 'bar']},
+        restore : {show: true},
+        saveAsImage : {show: true}
+      }
+    },
+    xAxis: {
+      type: 'time',
+      splitLine: {
+        show: false
+      }
+    },
+    yAxis: {
+      type: 'value',
+      name: '结案率',
+      min: 0,
+      max: 100,
+      interval: 20,
+      axisLabel: {
+        formatter: '{value} %'
+      },
+      boundaryGap: [0, '100%'],
+      splitLine: {
+        show: false
+      }
+    },
+    series: [{
+      name: '模拟数据',
+      type: 'line',
+      showSymbol: false,
+      hoverAnimation: false,
+      data: data
+    }]
+  };
+
+  setInterval(function () {
+
+    for (var i = 0; i < 5; i++) {
+      data.shift();
+      data.push(randomData());
+    }
+
+    myChart.setOption({
+      series: [{
+        data: data
+      }]
+    });
+  }, 20000);
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+}
 //********************************地图************************************
-var fourthChart = echarts.init(document.getElementById('zjmaps'));
+var myChart = echarts.init(document.getElementById('zjmaps'));
 var name = 'hubei';
     $.get('../data/' + name + '.json', function (geoJson) {
         echarts.registerMap(name, geoJson);
@@ -524,15 +619,6 @@ var name = 'hubei';
 
                 }
             },
-
-            // roamController: {
-            //     show: true,
-            //     x: 'right',
-            //     z:999,
-            //     mapTypeControl: {
-            //         name: true
-            //     }
-            // },
             series: [
                 {
                     name:'hubei',
@@ -601,42 +687,21 @@ var name = 'hubei';
                             }
                         },
                         data: [
-                            {name: '海岩高院', coord:[114.2363,30.1572]}
+                            {name: '法院', coord:[114.2363,30.1572]}
                         ]
-                    },
+                    }
                 }
-                // {
-                //     name: 'Top5',
-                //     type: 'map',
-                //     mapType: name,
-                //     data:[],
-                //     markPoint : {
-                //         symbol:'emptyCircle',
-                //         symbolSize : function (v){
-                //             return 10 + v/100
-                //         },
-                //         effect : {
-                //             show: true,
-                //             shadowBlur : 0
-                //         },
-                //         itemStyle:{
-                //             normal:{
-                //                 label:{show:false}
-                //             }
-                //         },
-                //         data : [
-                //
-                //
-                //             {name: "武汉", value: 273},
-                //
-                //         ]
-                //     }
-                // }
 
             ]
         };
-        fourthChart.setOption(option);
+      myChart.setOption(option);
+
     });
 
-
+myChart.on('click', function (params) {
+    console.log('params'+params);
+    console.log(params);
+  var city = params.name;
+  alert(city);
+});
 
