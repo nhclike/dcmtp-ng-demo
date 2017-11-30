@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI 自动完成（Autocomplete） - 默认功能</title>
+	<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+	<script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jqueryui/style.css">
+
+</head>
+<body>
+
+<div class="ui-widget">
+	<label for="tags">标签：</label>
+	<input id="tags">
+</div>
+<script>
+  $(function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags,
+      max: 120,    //列表里的条目数
+      minChars: 0,    //自动完成激活之前填入的最小字符
+      width: 178,     //提示的宽度，溢出隐藏
+      scrollHeight: 104,   //提示的高度，溢出显示滚动条
+      matchContains: true,    //包含匹配，就是data参数里的数据，是否只要包含文本框里的数据就显示
+      autoFill: false,    //自动填充
+      delay: 0,
+
+
+    });
+  });
+</script>
+
+</body>
+</html>

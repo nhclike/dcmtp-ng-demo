@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/select2.css">
+</head>
+<body>
+	<div>
+		<select name="test" id="select_test_option" class="select2">
+
+		</select>
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<select name="test" id="select_test_single" class="select2">
+
+		</select>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+		<select name="test" id="select_test_multiple" class="select2" multiple>
+
+		</select>
+
+
+		<select name="test" id="select_test_remote_data" class="select2" >
+
+		</select>
+	</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/select2.full.js"></script>
+<script src="js/select2.js"></script>
+<script>
+  var data = [ { id: 0, text: '请选择法院' },{ id: 1, text: '1111' },{ id: 0, text: '2222' },{ id: 0, text: '3333' }, { id: 0, text: '4444' },{ id: 1, text: '55555' },{ id: 0, text: '666666' },{ id: 0, text: '777' }];
+  var remoteData={};
+  function getDate() {
+    $.ajax({
+      url: "data.json",
+      method: 'get',
+      dataType : 'json',
+      success: function(res)
+      {
+        remoteData=res;
+        console.log(remoteData);
+        //select默认就有选项
+        $("#select_test_remote_data").select2({
+
+          placeholder:'请选择法院',
+          data: remoteData,
+          width:"200px",   //定义select的width
+          allowClear:true  //允许用户自己删除
+        });
+      }
+    });
+  }
+
+  getDate();
+
+  //select默认就有选项
+  $("#select_test_option").select2({
+
+    placeholder:'请选择法院',
+    data: data,
+    width:"200px",   //定义select的width
+    allowClear:true  //允许用户自己删除
+  });
+
+	//select单选
+  $("#select_test_single").select2({
+
+    ajax: {
+      url: "data.json",
+      dataType: 'json',
+      delay: 250,
+      data: function (params) {
+        return {
+          q: params.term,
+        };
+      },
+      processResults: function (data) {
+        return {
+          results: data
+        };
+      },
+      cache: true
+    },
+    data: data,
+    escapeMarkup: function (markup) { return markup; },
+    placeholder:'请选择法院',
+    //minimumInputLength: 1,
+		width:"200px",   //定义select的width
+    allowClear:true  //允许用户自己删除
+  });
+
+
+
+  //select多选
+  $("#select_test_multiple").select2({
+    ajax: {
+      url: "data.json",
+      dataType: 'json',
+      delay: 250,
+      data: function (params) {
+        return {
+          q: params.term,
+          page: 1,
+          rows: 15
+        };
+      },
+      processResults: function (data) {
+        return {
+          results: data
+        };
+      },
+      cache: true
+    },
+    initSelection : function (element, callback) {
+      var data1 = [];
+     /* $(element.val().split(",")).each(function () {
+        data.push({id: this, text: this});
+      });*/
+      data1=[ { id: 0, text: '请选择法院' },{ id: 0, text: '777' }];
+      callback(data1);
+    },
+    escapeMarkup: function (markup) { return markup; },
+    placeholder:'请选择法院',
+    minimumInputLength: 1,
+    width:"500px",   //定义select的width
+    maximumSelectionSize:5, //最多能选择的个数
+    allowClear:true  //允许用户自己删除
+  });
+
+</script>
+</body>
+</html>
