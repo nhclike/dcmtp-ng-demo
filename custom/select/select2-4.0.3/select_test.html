@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div>
-		<select name="test" id="select_test_option" class="select2">
+		<select name="test" id="select_test_option" class="select2" multiple>
 
 		</select>
 
@@ -58,11 +58,12 @@
 
   //select默认就有选项
   $("#select_test_option").select2({
-
+    closeOnSelect: false,
     placeholder:'请选择法院',
     data: data,
     width:"200px",   //定义select的width
     allowClear:true  //允许用户自己删除
+
   });
 
 	//select单选
