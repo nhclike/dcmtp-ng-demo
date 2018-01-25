@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--1,lang="zh-cn"-->
+<head lang="zh-cn">
+	<meta charset="UTF-8">
+	<!--2,viewport-->
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+</head>
+<body>
+
+<div id="section">
+	<div class="container-fluid">
+		<div id="danbinNumberBar" style="width: 800px; height: 350px;"></div>
+		<div id="vehicleNumberBar" style="width: 800px; height: 350px;"></div>
+	</div>
+</div>
+
+<!--引入jquery,bootstrap js-->
+<script src="../../js/bootstrap/jquery-1.11.3.js"></script>
+<script src="../../plugin/echart/echarts.js"></script>
+<script>
+  var datax=['中院','上城','下城','西湖','拱墅','江干','滨江','萧山','桐庐','富阳','临安','余杭'];
+  var dataxcode=['1301B10','1302B11','1303B12','1306B15','1305B14','1304B13','1307B16','1308B17','1309B18','1310B19','1311B1A','1312B1B'];
+  var hand_terminal_online= [null, 132, 101, 134, 90, 230, 210];
+  var hand_terminal_offline=[132, 232, {value:234,itemStyle:{normal:{
+    color:'red'
+	}}}, 154, 0, 330, 410];
+  var legendData=['在线单兵','离线单兵'];
+  danbinNumberChart = echarts.init(document.getElementById('danbinNumberBar'));
+  vehicleNumberChart = echarts.init(document.getElementById('vehicleNumberBar'));
+  loadBar('单兵',legendData,datax,dataxcode,hand_terminal_online,hand_terminal_offline,danbinNumberChart);
+  loadBar('车载',legendData,datax,dataxcode,hand_terminal_online,hand_terminal_offline,vehicleNumberChart);
+  function loadBar(title,legendData,datax,dataxcode,online,offline,Chart){
+    option = {
+      title:{
+        show:true,
+        text:title+'使用情况',
+        left:10,
+        textStyle:{
+          color:'#237AE5',
+          fontWeight:400,
+
+        }
+      },
+      tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+          type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        },
+				show:true,
+       formatter:function (d) {
+					console.log(d);
+					var vald=d[0].value;
+					var valv=d[1].value;
+					if(vald==null){
+            vald=0;
+					}
+					if(valv==null){
+            valv=0;
+					}
+					return d[0].seriesName+':'+vald+'<br>'+d[1].seriesName+':'+valv;
+        }
+      },
+      legend: {
+        data:legendData,
+        right:20
+      },
+      grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+      },
+      color:['#11CFF7','#77F2D2'],
+      xAxis : [
+        {
+          type : 'category',
+          data : datax,
+          axisLabel:{
+            show:true,
+            color:'#237AE5',
+            fontSize:14
+          }
+        },
+        {
+          type : 'category',
+          data : dataxcode,
+          axisLabel:{
+            show:false,
+            color:'#237AE5',
+            fontSize:14
+          }
+        }
+      ],
+      yAxis : [
+        {
+          type : 'value',
+          axisLabel:{
+            show:true,
+            color:'#237AE5',
+            fontSize:14
+          }
+        }
+      ],
+      series :[
+        {
+          name:'在线'+title,
+          type:'bar',
+          stack: title,
+          data:online,
+          barCategoryGap:'40%',
+          barMaxWidth:50,
+          barMinHeight:10,
+          xAxisIndex:1,
+          label:{
+            normal: {
+              show: true,
+              position: 'insideTop',
+              color:'#fff'
+            }
+          },
+					color:'',
+          itemStyle: {
+            normal: {
+              /*color: function(params) {
+                if(params.series.data[params.dataIndex] != null && params.series.data[params.dataIndex].color != undefined)
+                {
+                  return params.series.data[params.dataIndex].color;
+                }else
+                {
+                  return params.series.color;
+                }
+              }*/
+            }
+          }
+        },
+        {
+          name:'离线'+title,
+          type:'bar',
+          stack: title,
+          data:offline,
+          xAxisIndex:1,
+          label:{
+            normal: {
+              show: true,
+              position: 'top',
+              color:'#E59D04'
+            }
+          }
+        }
+      ]
+    };
+    Chart.setOption(option);
+
+    Chart.on('click', function(param){
+      console.log(param.name)
+    });
+
+  }
+</script>
+
+</body>
+</html>
