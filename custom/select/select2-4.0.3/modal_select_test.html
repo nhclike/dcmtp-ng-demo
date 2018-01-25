@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="css/select2.css">
+	<link rel="stylesheet" href="../../../css/bootstrap.min.css">
+</head>
+<body>
+<div>
+	<!-- Button trigger modal -->
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Launch demo modal
+	</button>
+	<div>
+		<h1>select2使用注意事项</h1>
+		1modal中使用select2，出现不能输入中文搜索的情况
+		---解决：1去掉tabindex="-1"
+		2模态框js内加上$.fn.modal.Constructor.prototype.enforceFocus = function () { };
+		2默认加载选择项
+		-----解决：$('#assistance_contractor').val({id:'1',text:'111'}).trigger("change");
+		3样式修改，直接修改源码
+		4提示至少输入一个字符为英文，改为中文提示
+		-----注意事项：文件引入的时候，引入select2.full.js，不要引入select2.full.min.js
+		---------------可能是压缩版本没有中文包，如果引入压缩版会导致提示信息都显示为英文
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<select name="test" id="select_test_remote_data" class="select2" >
+
+					</select>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/select2.full.js"></script>
+<script src="js/select2.js"></script>
+	<script src="../../../js/bootstrap/bootstrap.min.js"></script>
+	<script>
+    $("#select_test_remote_data").select2({
+      ajax: {
+        url: 'data.json',
+        type: 'post',
+        dataType: 'json',
+        delay: 250,
+        data: function (params) {
+          return {
+            case_no: params.term
+          };
+        },
+//	            	      data :{case_no:$("#caseInfo").val()},
+        processResults: function (data) {
+          return {
+            results: data
+          };
+        },
+        cache: true
+      },
+      escapeMarkup: function (markup) { return markup; },
+      placeholder:'请选择关联案件',
+      minimumInputLength: 6,
+      width:"70%",   //定义select的width
+      formatInputTooShort:'12312312',
+      formatLoadMore:'rwerwr',
+    });
+	</script>
+
+</body>
+</html>
