@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript" src="echarts.js"></script>
+	<script type="text/javascript" src="echarts1.js"></script>
 	<script type="text/javascript" src="js/province/zhejiang.js"></script>
 
 </head>
@@ -12,7 +12,8 @@
 <br>
 <script type="text/javascript">
   var chart = echarts.init(document.getElementById('main'));
-	
+
+
   // 浙江省中级法院信息
   var // 浙江省中级法院信息
     proviceData = [ {
@@ -104,7 +105,6 @@
     } ];
 
 
-
   var option = {
     backgroundColor: '#999',
 
@@ -112,8 +112,8 @@
     tooltip : {
       trigger: 'item',
       formatter: function (params) { //添加数字,否则为坐标
-        console.log(params.value)
-        return params.name+'<br>'+':'+''+params.value[2]+''+'个'
+        //console.log(params.value)
+        return params.name
 
       },
       padding:[
@@ -141,9 +141,64 @@
         tooltip:{//区域块hover
           formatter: function (params) { //添加数字,否则为坐标
             console.log(params);
-            return params.name+params.value;
+            return params.name
           },
 				},
+        markPoint : {
+          symbol : 'image://pointbg1.png',
+          symbolSize :[80,65],
+          label : {//mark区域块上的文字样式
+            normal : {
+              show : true,
+              padding:[0,0,15,0],
+              verticalAlign:'middle',
+              fontWeight:'lighter',
+							color:'#fff',
+              formatter : function(d) {
+								console.log(d);
+                var str = '';
+
+                  str= ['{value|'+ d.data.courtName+ '}','\n','{num|'+ d.value[0]+ '/'+ d.value[1]+ '}' ]
+                    .join('')
+
+                return str
+              },
+              rich : {
+                value : {
+                  color : '#f8f8f8',
+                  fontSize :18,
+                  fontWeight:'bold',
+                  padding:[8,0]
+                },
+
+                num : {
+                  color : '#f8f8f8',
+                  fontSize :22,
+                  fontWeight:'bold'
+                },
+                img : {
+                  height : 15,
+                  backgroundColor : {
+                    image : '../resources/image/icon/location.png'
+                  }
+                }
+              }
+            },
+            emphasis : {
+              show : true
+            }
+          },//mark区域样式
+          itemStyle : {
+            normal : {
+              color : '#fff',
+              borderColor:'#f8f8f8',
+              borderWidth:0.5
+
+            }
+          },
+          data : proviceData,
+
+        },
         itemStyle : {
           normal : {
             borderColor : '#fff',
@@ -153,8 +208,7 @@
             label:{
               show:true,
               textStyle:{
-                color:'#fff',
-								fontSize:26
+                color:'#fff'
               }
             }
           },
@@ -166,24 +220,18 @@
             label:{
               show:true,
               textStyle:{
-                color:'#fff',
-                fontSize:26
+                color:'#fff'
               }
             }
           }
         },
 				label:{
 				  normal:{
-				    show:true,
-            formatter: function (params) { //添加数字,否则为坐标
-              console.log(params);
-              return params.name+params.value;
-            }
+				    show:true
 					}
-
 				},
-				data:proviceData
 			}
+
     ]
   };
 
